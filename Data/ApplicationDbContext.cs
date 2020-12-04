@@ -13,5 +13,8 @@ namespace ConsejeriaEPICS.Data{
         {
         }
 
+        public DbSet<ConsejeriaEPICS.Models.Categoria> Categorias { get; set; }
+        public DbSet<ConsejeriaEPICS.Models.Requerimiento> Requerimientos { get; set; }
+        public DbSet<ConsejeriaEPICS.Models.Usuario> Usuarios { get; set; }
     }
 }

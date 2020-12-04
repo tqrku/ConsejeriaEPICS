@@ -57,3 +57,5 @@ D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\staticwebassets\Cons
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.dll
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.pdb
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.genruntimeconfig.cache
+D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Listado\Consejero.cshtml.g.cs
+D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Listado\Estudiante.cshtml.g.cs

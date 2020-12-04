@@ -27,7 +27,7 @@ namespace ConsejeriaEPICS
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("postgress-db")));
+                options.UseNpgsql(Configuration.GetConnectionString("PostgressConnection")));
             services.AddControllersWithViews();
         }
 
@@ -55,7 +55,7 @@ namespace ConsejeriaEPICS
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Login}/{action=Index}/{id?}");
             });
         }
     }

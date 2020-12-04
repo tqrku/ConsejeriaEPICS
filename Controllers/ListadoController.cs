@@ -23,12 +23,12 @@ namespace ConsejeriaEPICS.Controllers
 
         public IActionResult Consejero()
         {
-            return View("Consejero");
+            return View();
         }
 
         public IActionResult Estudiante()
         {
-            return View("Estudiante");
+            return View();
         }
 
 

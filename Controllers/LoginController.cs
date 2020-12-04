@@ -26,6 +26,24 @@ namespace ConsejeriaEPICS.Controllers
             return View();
         }
 
+        public IActionResult Logueo(Usuario usuario)
+        {
+            var listUsuarios=_context.Usuarios.ToList();
+            
+            for(int i=0; i<listUsuarios.Count; i++){
+                Usuario user = listUsuarios[i];
+                if(user.Correo==usuario.Correo && user.Password==usuario.Password){
+                    if(user.Tipo=="E"){
+                        return RedirectToAction("Index", "EstudianteController", new { area = "" });
+                    }else{
+                        return RedirectToAction("Index", "ConsejeriaController", new { area = "" });
+                    }
+                }
+            }
+
+            return View("Index");
+            
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
