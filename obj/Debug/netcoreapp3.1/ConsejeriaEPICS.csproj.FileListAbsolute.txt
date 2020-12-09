@@ -1,61 +1,126 @@
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\appsettings.Development.json
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\appsettings.json
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\ConsejeriaEPICS.exe
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\ConsejeriaEPICS.deps.json
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\ConsejeriaEPICS.runtimeconfig.json
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\ConsejeriaEPICS.runtimeconfig.dev.json
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\ConsejeriaEPICS.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\ConsejeriaEPICS.pdb
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\ConsejeriaEPICS.Views.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\ConsejeriaEPICS.Views.pdb
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Npgsql.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.csprojAssemblyReference.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.AssemblyInfoInputs.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.AssemblyInfo.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.csproj.CoreCompileInputs.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.MvcApplicationPartsAssemblyInfo.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.RazorAssemblyInfo.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.RazorAssemblyInfo.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.TagHelpers.input.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.TagHelpers.output.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.RazorCoreGenerate.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Consejero\Index.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Estudiante\Index.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.RazorTargetAssemblyInfo.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.RazorTargetAssemblyInfo.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.Views.pdb
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.csproj.CopyComplete
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\staticwebassets\ConsejeriaEPICS.StaticWebAssets.Manifest.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\staticwebassets\ConsejeriaEPICS.StaticWebAssets.xml
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.dll
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.pdb
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.genruntimeconfig.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Listado\Consejero.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Listado\Estudiante.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/appsettings.Development.json
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/appsettings.json
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.exe
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.deps.json
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.runtimeconfig.json
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.runtimeconfig.dev.json
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.pdb
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.Views.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.Views.pdb
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Npgsql.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.csprojAssemblyReference.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.AssemblyInfoInputs.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.AssemblyInfo.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.csproj.CoreCompileInputs.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.MvcApplicationPartsAssemblyInfo.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorAssemblyInfo.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorAssemblyInfo.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.TagHelpers.input.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.TagHelpers.output.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorCoreGenerate.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Consejero/Index.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Estudiante/Index.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Login/Index.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorTargetAssemblyInfo.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorTargetAssemblyInfo.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.Views.pdb
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.csproj.CopyComplete
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/staticwebassets/ConsejeriaEPICS.StaticWebAssets.Manifest.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/staticwebassets/ConsejeriaEPICS.StaticWebAssets.xml
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.dll
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.pdb
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.genruntimeconfig.cache
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Listado/Consejero.cshtml.g.cs
+D:/VSCode_Workspace/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Listado/Estudiante.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.deps.json
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.runtimeconfig.json
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.runtimeconfig.dev.json
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.pdb
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.Views.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/ConsejeriaEPICS.Views.pdb
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Npgsql.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.csprojAssemblyReference.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.AssemblyInfoInputs.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.AssemblyInfo.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.csproj.CoreCompileInputs.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.MvcApplicationPartsAssemblyInfo.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorAssemblyInfo.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorAssemblyInfo.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.TagHelpers.input.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.TagHelpers.output.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorCoreGenerate.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/AgregarRequerimiento/Index.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Consejeria/Index.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/EstadosRequerimientos/Index.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Estudiante/Index.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Listado/Consejero.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Listado/Estudiante.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Login/Index.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/RequerimientosPendientes/Index.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/RequerimientosProceso/Index.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/RequerimientosTerminados/Index.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorTargetAssemblyInfo.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.RazorTargetAssemblyInfo.cs
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.Views.pdb
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.csproj.CopyComplete
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/staticwebassets/ConsejeriaEPICS.StaticWebAssets.Manifest.cache
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/staticwebassets/ConsejeriaEPICS.StaticWebAssets.xml
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.dll
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.pdb
+/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/Debug/netcoreapp3.1/ConsejeriaEPICS.genruntimeconfig.cache
