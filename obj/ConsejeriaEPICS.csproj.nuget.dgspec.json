@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VSCode_Workspace\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj": {}
+    "/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/ConsejeriaEPICS.csproj": {}
   },
   "projects": {
-    "D:\\VSCode_Workspace\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj": {
+    "/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/ConsejeriaEPICS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VSCode_Workspace\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj",
+        "projectUniqueName": "/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/ConsejeriaEPICS.csproj",
         "projectName": "ConsejeriaEPICS",
-        "projectPath": "D:\\VSCode_Workspace\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj",
-        "packagesPath": "C:\\Users\\jebg_\\.nuget\\packages\\",
-        "outputPath": "D:\\VSCode_Workspace\\ConsejeriaEPICS\\obj\\",
+        "projectPath": "/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/ConsejeriaEPICS.csproj",
+        "packagesPath": "/Users/jeapieer/.nuget/packages/",
+        "outputPath": "/Users/jeapieer/Documents/6to Ciclo/ing software/Proyecto Consejeria/Proyecto/ConsejeriaEPICS/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\jebg_\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/jeapieer/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
         }
       }
     }
