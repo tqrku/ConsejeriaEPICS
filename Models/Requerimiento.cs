@@ -28,5 +28,11 @@ namespace ConsejeriaEPICS.Models
         [Column("fechafin")]
         public DateTime? Fecha_Fin { get; set; }
 
+        [Column("consejero_id")]
+        public int? Consejero_ID { get; set; }
+
+        [Column("respuesta")]
+        public string Respuesta { get; set; }
+
     }
 }

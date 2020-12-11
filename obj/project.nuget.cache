@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6Or8EHzgbrXrihlxwaq2an5tbXqojyodoqP00hFsYmNjH7ARWrhaQLTLiaLx83wZ9xYsX+QQqKv4LqNgE7VHWQ==",
+  "dgSpecHash": "K+sTjsX6mTBavXq/S2gn/r4mtC45Obupr8ZmbWkUD7wyPNHS7FXop8WUXVV4tO6GVPXE6qKSLeq1Bg3IUH3d8g==",
   "success": true,
   "projectFilePath": "D:\\VSCode_Workspace\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj",
   "expectedPackageFiles": [
@@ -24,6 +24,7 @@
     "C:\\Users\\jebg_\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.4\\microsoft.extensions.logging.abstractions.3.1.4.nupkg.sha512",
     "C:\\Users\\jebg_\\.nuget\\packages\\microsoft.extensions.options\\3.1.4\\microsoft.extensions.options.3.1.4.nupkg.sha512",
     "C:\\Users\\jebg_\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.4\\microsoft.extensions.primitives.3.1.4.nupkg.sha512",
+    "C:\\Users\\jebg_\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\jebg_\\.nuget\\packages\\npgsql\\4.1.3.1\\npgsql.4.1.3.1.nupkg.sha512",
     "C:\\Users\\jebg_\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\3.1.4\\npgsql.entityframeworkcore.postgresql.3.1.4.nupkg.sha512",
     "C:\\Users\\jebg_\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",

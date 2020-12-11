@@ -105,16 +105,11 @@ D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.Razo
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.TagHelpers.input.cache
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.TagHelpers.output.cache
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.RazorCoreGenerate.cache
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\AgregarRequerimiento\Index.cshtml.g.cs
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Consejeria\Index.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\EstadosRequerimientos\Index.cshtml.g.cs
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Estudiante\Index.cshtml.g.cs
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Listado\Consejero.cshtml.g.cs
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Listado\Estudiante.cshtml.g.cs
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\RequerimientosPendientes\Index.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\RequerimientosProceso\Index.cshtml.g.cs
-D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\RequerimientosTerminados\Index.cshtml.g.cs
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -129,3 +124,5 @@ D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\staticwebassets\Cons
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.dll
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.pdb
 D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.genruntimeconfig.cache
+D:\VSCode_Workspace\ConsejeriaEPICS\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Formulario\Index.cshtml.g.cs

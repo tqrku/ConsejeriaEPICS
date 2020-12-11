@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ConsejeriaEPICS.Models;
 using ConsejeriaEPICS.Data;
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 
 namespace ConsejeriaEPICS.Controllers
 {
@@ -23,7 +25,20 @@ namespace ConsejeriaEPICS.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var status=HttpContext.Session.GetString("State");          
+            if(status!=null){
+                var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
+                var tipo = user.Tipo;
+                if(tipo=="E"){
+                    return View();
+                }else{
+                    HttpContext.Session.Clear();
+                    return RedirectToAction("Index","Login");
+                }
+
+            }else{
+                return RedirectToAction("Index","Login");
+            }    
         }
 
 

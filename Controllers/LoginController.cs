@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ConsejeriaEPICS.Models;
 using ConsejeriaEPICS.Data;
-
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Http;
 namespace ConsejeriaEPICS.Controllers
 {
     public class LoginController : Controller
@@ -28,21 +29,30 @@ namespace ConsejeriaEPICS.Controllers
 
         public IActionResult Logueo(Usuario usuario)
         {
+            var userLogged= new Usuario();
             var listUsuarios=_context.Usuarios.ToList();
-            
             for(int i=0; i<listUsuarios.Count; i++){
                 Usuario user = listUsuarios[i];
                 if(user.Correo==usuario.Correo && user.Password==usuario.Password){
+                    userLogged=user;
+                    HttpContext.Session.SetString("SessionUser", JsonConvert.SerializeObject(userLogged));
+                    HttpContext.Session.SetString("State","logged");
+                    
                     if(user.Tipo=="E"){
                         return RedirectToAction("Index", "Estudiante", new { area = "" });
                     }else{
+
                         return RedirectToAction("Index", "Consejeria", new { area = "" });
                     }
                 }
             }
-
             return RedirectToAction("Index");
             
+        }
+
+        public IActionResult Logout(){
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

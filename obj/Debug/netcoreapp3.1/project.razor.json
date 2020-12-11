@@ -14392,13 +14392,13 @@
   "RootNamespace": "ConsejeriaEPICS",
   "Documents": [
     {
-      "FilePath": "d:\\VSCode_Workspace\\ConsejeriaEPICS\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FilePath": "d:\\VSCode_Workspace\\ConsejeriaEPICS\\Views\\Formulario\\Index.cshtml",
+      "TargetPath": "Views\\Formulario\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\VSCode_Workspace\\ConsejeriaEPICS\\Views\\RequerimientosPendientes\\Index.cshtml",
-      "TargetPath": "Views\\RequerimientosPendientes\\Index.cshtml",
+      "FilePath": "d:\\VSCode_Workspace\\ConsejeriaEPICS\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14437,11 +14437,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\VSCode_Workspace\\ConsejeriaEPICS\\Views\\RequerimientosTerminados\\Index.cshtml",
-      "TargetPath": "Views\\RequerimientosTerminados\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\VSCode_Workspace\\ConsejeriaEPICS\\Views\\EstadosRequerimientos\\Index.cshtml",
       "TargetPath": "Views\\EstadosRequerimientos\\Index.cshtml",
       "FileKind": "mvc"
@@ -14459,11 +14454,6 @@
     {
       "FilePath": "d:\\VSCode_Workspace\\ConsejeriaEPICS\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "d:\\VSCode_Workspace\\ConsejeriaEPICS\\Views\\RequerimientosProceso\\Index.cshtml",
-      "TargetPath": "Views\\RequerimientosProceso\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],
