@@ -1,13 +1,15 @@
+@model ConsejeriaEPICS.Models.Usuario
+
 <div id="login" style="padding-bottom: 0%;">
     <img src="~/img/fia.jpg" style="width: 100%;" style="padding-bottom: 0%;">
 <div class="loginbox" style="padding-bottom: none;">
         <h1>Login</h1>
-        <form>
+        <form asp-action="Logueo" asp-controller="Login">
             <p>Usuario</p>
-            <input type="text" name="" placeholder="Escribe tu nombre de usuario">
+            <input type="text" asp-for="Correo" placeholder="Escribe tu correo institucional">
             <p>Contraseña</p>
-            <input type="password" name="" placeholder="Escribe tu contraseña">
-            <input type="submit" name="" value="Login">
+            <input type="password" asp-for="Password" placeholder="Escribe tu contraseña">
+            <input type="submit" value="Login">
         </form>
         
     </div>

@@ -34,14 +34,14 @@ namespace ConsejeriaEPICS.Controllers
                 Usuario user = listUsuarios[i];
                 if(user.Correo==usuario.Correo && user.Password==usuario.Password){
                     if(user.Tipo=="E"){
-                        return RedirectToAction("Index", "EstudianteController", new { area = "" });
+                        return RedirectToAction("Index", "Estudiante", new { area = "" });
                     }else{
-                        return RedirectToAction("Index", "ConsejeriaController", new { area = "" });
+                        return RedirectToAction("Index", "Consejeria", new { area = "" });
                     }
                 }
             }
 
-            return View("Index");
+            return RedirectToAction("Index");
             
         }
 
