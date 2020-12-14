@@ -12,19 +12,19 @@ namespace ConsejeriaEPICS.Models
 
         [Column("user_id")]
         public int User_ID { get; set; }
-
+        [Required]
         [Column("tipo_req")]
         public int Tipo_Req { get; set; }
-
+        [Required]
         [Column("estado")]
         public string Estado { get; set; }
-
+        [Required]
         [Column("detalles")]
         public string Detalle { get; set; }
-
+        [Required]
         [Column("fechaini")]
         public DateTime Fecha_Inicio { get; set; }
-
+        [Required]
         [Column("fechafin")]
         public DateTime? Fecha_Fin { get; set; }
 
