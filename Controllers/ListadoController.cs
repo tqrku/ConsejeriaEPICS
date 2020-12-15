@@ -94,14 +94,21 @@ namespace ConsejeriaEPICS.Controllers
 
         public IActionResult Procesado()
         {
+            List<Requerimiento> listReqUser= new List<Requerimiento>();
             foreach(Requerimiento req in listRequerimientos){
                 if(req.Estado=="EN PROCESO"){
-                    listMostrar.Add(req);
+                    if(req.Consejero_ID==(JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"))).ID){
+                        listReqUser.Add(req);
+                    }else{
+                        listMostrar.Add(req);
+                    }
+                    
                 }
             }
             dynamic modelo= new ExpandoObject();
             modelo.Titulo="Requerimientos En Proceso";
             modelo.Desc="Visualiza todos los requerimientos que estan siendo atendidos";
+            modelo.ReqUser=listReqUser;
             modelo.Mostrar=listMostrar;
             return View("Consejero",modelo);
         }
