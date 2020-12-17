@@ -1,3 +1,8 @@
+ 
+@{
+    ViewData["Title"] = "Formulario de Solicitud";
+}
+ 
  <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
 
@@ -5,18 +10,44 @@
       <h1>Agrega tu requerimiento y completa el formulario de acuerdo a tu problema</h1>
     </div>
   </section>
-  <br>
+ 
 
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
-   <br>
+<section class="contact-box" style="background-color: white" >
+    <div class="row no-gutters bg-dark">
+        <div class="col-xl-5 col-lg-12 register-Solicitud">
+        </div>
+        <div class="col-xl-7 col-lg-12 d-flex">
+             <div class="container align-self-center p-6" >
+                 <h1 class="font-weight-bold mb-3" style="color: black;">Completa el formulario de Solicitud</h1>
+                 <br>
+                
+                 <form action="" method="post">
+                     <div class="form-group mb-3">
+                        <label  class="font-weight-bold" style="color: black;">Titulo del Problema<span class="text-danger">*</span></label>
+                        <br>
+                        <input type="text" class="form-control" id="cambio" style="background-color: #910222;color:white">
+                         <span class="text-danger"></span>
+                     </div>
+                     <br>
+                     <div class="form-group mb-3">
+                         <label  class="font-weight-bold" style="color: black;">Descripción del Problema:<span class="text-danger">*</span></label>
+                         <textarea type="text"  style="background-color: #910222;color:white" class="form-control"></textarea>
+                          <span  class="text-danger"></span>
+                     </div>
+                     <br>
+                     <div class="form-group mb-3">
+                        <label  class="font-weight-bold" style="color: black;">Estado:<span class="text-danger">*</span></label>
+                        <br>
+                        <input type="text" class="form-control" value="Pendiente" style="background-color: #910222;color:white">
+                         <span class="text-danger"></span>
+                     </div>
+                   <br>
+                   <div style="text-align: center;">
+                               <button class="get-started-btn scrollto" style="border-radius: 50px;margin:20px">Regístrar</button>
+                   </div>
+             
+                 </form>
+             </div>
+        </div>
+    </div>
+</section>
