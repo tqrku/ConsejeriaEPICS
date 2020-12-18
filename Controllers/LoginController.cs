@@ -69,7 +69,7 @@ namespace ConsejeriaEPICS.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("Index");
             }else{
-                return View();
+                return RedirectToAction("Registro");
             }
 
         }

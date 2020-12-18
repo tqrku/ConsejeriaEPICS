@@ -1,7 +1,6 @@
  @model dynamic
 
  @{
-   Requerimiento requerimiento= new Requerimiento();
    Categoria cat = new Categoria();
    var listCategoria=@Model.Categorias;
  }
@@ -50,7 +49,7 @@
               <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Detalle">Ver Detalle</button>
             </td>
             <td>
-              <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="<form asp-action='Responder' asp-controller='Listado'><label>Ingrese respuesta</label><input type='hidden' asp-for='@requerimiento.ID' value='@req.ID' /><input type='text' asp-for='@requerimiento.Respuesta' /><button type='submit' class='btn btn-primary'>Enviar</button></form>">Responder</button>
+              <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="<form asp-action='Responder' asp-controller='Listado'><label>Ingrese respuesta</label><input type='hidden' asp-for='@req.ID' value='@req.ID' /><input type='text' asp-for='@req.Respuesta' /><button type='submit' class='btn btn-primary'>Enviar</button></form>">Responder</button>
             </td>
           </tr>
         }
@@ -75,6 +74,8 @@
         <th style="color: white;" scope="col">Detalle</th>
         @if(@Model.Titulo=="Requerimientos Terminados"){
           <th style="color: white;" scope="col">Respuesta</th>
+        }else if(@Model.Titulo=="Requerimientos Pendientes"){
+          <th style="color: white;" scope="col">Seleccionar</th>
         }
       </tr>
     </thead>
@@ -108,7 +109,7 @@
               <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Respuesta">Ver Respuesta</button>
             </td>
           }else if(@Model.Titulo=="Requerimientos Pendientes"){
-            <form asp-action="Seleccionar" asp-controller="Listado"><input type="hidden" asp-for="@requerimiento.ID" value="@req.ID"><button type="submit" class="btn btn-warning">Seleccionar</button></form>
+            <form asp-action="Seleccionar" asp-controller="Listado"><input type="hidden" asp-for="@req.ID" value="@req.ID"><button type="submit" class="btn btn-warning">Seleccionar</button></form>
           }
         </tr>
       }

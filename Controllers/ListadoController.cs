@@ -144,7 +144,9 @@ namespace ConsejeriaEPICS.Controllers
             var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
             Requerimiento requerimiento= _context.Requerimientos.Where(r => r.ID == req.ID).FirstOrDefault();
             _context.Remove(requerimiento);
+            _context.SaveChanges();
             requerimiento.Consejero_ID= user.ID;  
+            requerimiento.Estado= "EN PROCESO";
             _context.Add(requerimiento);         
             _context.SaveChanges();
             return RedirectToAction("Procesado");
@@ -153,7 +155,9 @@ namespace ConsejeriaEPICS.Controllers
         public IActionResult Responder(Requerimiento req){
             Requerimiento requerimiento= _context.Requerimientos.Where(r => r.ID == req.ID).FirstOrDefault();
             _context.Remove(requerimiento);
-            requerimiento.Respuesta= req.Respuesta;  
+            _context.SaveChanges();
+            requerimiento.Respuesta= req.Respuesta;
+            requerimiento.Estado="TERMINADO";  
             _context.Add(requerimiento);         
             _context.SaveChanges();
             return RedirectToAction("Terminado");

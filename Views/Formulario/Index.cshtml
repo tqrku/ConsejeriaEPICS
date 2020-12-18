@@ -2,7 +2,6 @@
 
 @{
     ViewData["Title"] = "Formulario de Solicitud";
-    Requerimiento requerimiento= @Model.Requerimiento;
 }
  
  <section id="hero" class="d-flex justify-content-center align-items-center">
@@ -22,12 +21,12 @@
              <div class="container align-self-center p-6" >
                  <h1 class="font-weight-bold mb-3" style="color: black;">Completa el formulario de Solicitud</h1>
                  <br>
-                
+                @foreach (Requerimiento req in @Model.Requerimiento){
                  <form asp-action="Envio" asp-controller="Formulario" method="POST">
                      <div class="form-group mb-3">
                         <label  class="font-weight-bold" style="color: black;">Tipo de Requerimiento:<span class="text-danger">*</span></label>
                         <br>
-                        <select asp-for="@requerimiento.Tipo_Req">
+                        <select asp-for="@req.Tipo_Req">
                           @foreach (Categoria categoria in @Model.Categorias)
                           {
                               <option value="@categoria.ID">@categoria.Nombre</option>
@@ -38,7 +37,7 @@
                      <br>
                      <div class="form-group mb-3">
                          <label  class="font-weight-bold" style="color: black;">Descripción del Problema:<span class="text-danger">*</span></label>
-                         <textarea type="text"  style="background-color: #910222;color:white" class="form-control" asp-for="@requerimiento.Detalle"></textarea>
+                         <textarea type="text"  style="background-color: #910222;color:white" class="form-control" asp-for="@req.Detalle"></textarea>
                           <span  class="text-danger"></span>
                      </div>
 
@@ -48,6 +47,7 @@
                    </div>
              
                  </form>
+                }
              </div>
         </div>
     </div>

@@ -23,6 +23,7 @@
       <th style="color: white;" scope="col">Fecha Finalizacion</th>
       <th style="color: white;" scope="col">ID Consejero</th> 
       <th style="color: white;" scope="col">Tipo de Requerimiento</th>
+      <th style="color: white;" scope="col">Estado</th>
       <th style="color: white;" scope="col">Detalle</th>
       <th style="color: white;" scope="col">Respuesta</th>
     </tr>
@@ -52,7 +53,7 @@
             }
           }
         <td>@cat.Nombre</td>
-
+        <td>@req.Estado</td>
         <td>
           <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Detalle">Ver Detalle</button>
         </td>

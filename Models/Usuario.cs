@@ -33,7 +33,6 @@ namespace ConsejeriaEPICS.Models
         [Column("password")]
         public string Password { get; set; }
 
-        [Required]
         [Column("tipo")]
         public string Tipo { get; set; }
     }

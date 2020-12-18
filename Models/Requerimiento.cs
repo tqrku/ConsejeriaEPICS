@@ -11,7 +11,6 @@ namespace ConsejeriaEPICS.Models
         [Column("id")]
         public int ID { get; set; }
 
-        [Required]
         [Column("user_id")]
         public int User_ID { get; set; }
 
@@ -19,7 +18,6 @@ namespace ConsejeriaEPICS.Models
         [Column("tipo_req")]
         public int Tipo_Req { get; set; }
 
-        [Required]
         [Column("estado")]
         public string Estado { get; set; }
 
@@ -27,7 +25,6 @@ namespace ConsejeriaEPICS.Models
         [Column("detalles")]
         public string Detalle { get; set; }
 
-        [Required]
         [Column("fechaini")]
         public DateTime Fecha_Inicio { get; set; }
 

@@ -30,10 +30,12 @@ namespace ConsejeriaEPICS.Controllers
             if(status!=null){
                 var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
                 var tipo = user.Tipo;
+                var requerimiento = new List<Requerimiento>();
+                requerimiento.Add(new Requerimiento());
                 if(tipo=="E"){
                     dynamic modelo = new ExpandoObject();
                     modelo.Categorias = _context.Categorias.ToList();
-                    modelo.Requerimiento = new Requerimiento();
+                    modelo.Requerimiento = requerimiento;
                     return View(modelo);
                 }else{
                     HttpContext.Session.Clear();
@@ -49,6 +51,7 @@ namespace ConsejeriaEPICS.Controllers
             var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
             req.User_ID = user.ID;
             req.Estado = "PENDIENTE";
+            Console.WriteLine(req.Detalle);
             req.Fecha_Inicio = DateTime.Today;
             if(ModelState.IsValid){
                 _context.Requerimientos.Add(req);
@@ -56,7 +59,7 @@ namespace ConsejeriaEPICS.Controllers
                 return RedirectToAction("Estudiante","Listado");
 
             }else{
-                return View("Index");
+                return RedirectToAction("Index");
             }
         }
 
