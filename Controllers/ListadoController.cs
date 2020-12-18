@@ -22,11 +22,14 @@ namespace ConsejeriaEPICS.Controllers
 
         private List<Requerimiento> listMostrar= new List<Requerimiento>();
 
+        private List<Categoria> listCategoria = new List<Categoria>();
+
         public ListadoController(ILogger<ListadoController> logger, ApplicationDbContext context)
         {
             _logger = logger;
             _context = context;
             listRequerimientos=_context.Requerimientos.ToList();
+            listCategoria=_context.Categorias.ToList();
         }
 
 
@@ -68,6 +71,7 @@ namespace ConsejeriaEPICS.Controllers
                             listMostrar.Add(req);
                         }
                     }
+                    modelo.Categorias=listCategoria;
                     modelo.Mostrar=listMostrar;
                     return View("Estudiante",modelo);
                 }else{
@@ -92,8 +96,8 @@ namespace ConsejeriaEPICS.Controllers
             modelo.Titulo="Requerimientos Pendientes";
             modelo.Desc="Visualiza todos los requerimientos que aun no han sido atendidos";
             modelo.Mostrar=listMostrar;
+            modelo.Categorias=listCategoria;
             modelo.ReqUser=null;
-            modelo.Requerimiento= new Requerimiento();
             return View("Consejero",modelo);
         }
 
@@ -114,8 +118,8 @@ namespace ConsejeriaEPICS.Controllers
             modelo.Titulo="Requerimientos En Proceso";
             modelo.Desc="Visualiza todos los requerimientos que estan siendo atendidos";
             modelo.ReqUser=listReqUser;
+            modelo.Categorias=listCategoria;
             modelo.Mostrar=listMostrar;
-            modelo.Requerimiento= new Requerimiento();
             return View("Consejero",modelo);
         }
 
@@ -130,6 +134,7 @@ namespace ConsejeriaEPICS.Controllers
             modelo.Titulo="Requerimientos Terminados";
             modelo.Desc="Visualiza todos los requerimientos que ya han sido atendidos";
             modelo.Mostrar=listMostrar;
+            modelo.Categorias=listCategoria;
             modelo.ReqUser=null;
             return View("Consejero",modelo);
         }
@@ -143,6 +148,15 @@ namespace ConsejeriaEPICS.Controllers
             _context.Add(requerimiento);         
             _context.SaveChanges();
             return RedirectToAction("Procesado");
+        }
+
+        public IActionResult Responder(Requerimiento req){
+            Requerimiento requerimiento= _context.Requerimientos.Where(r => r.ID == req.ID).FirstOrDefault();
+            _context.Remove(requerimiento);
+            requerimiento.Respuesta= req.Respuesta;  
+            _context.Add(requerimiento);         
+            _context.SaveChanges();
+            return RedirectToAction("Terminado");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

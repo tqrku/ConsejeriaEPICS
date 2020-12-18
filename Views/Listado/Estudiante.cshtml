@@ -1,4 +1,9 @@
  @model dynamic
+
+ @{
+   Categoria cat = new Categoria();
+   var listCategoria=@Model.Categorias;
+ }
  
  <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
@@ -13,31 +18,57 @@
  <table class="table" >
   <thead>
     <tr style="background-color: #910222;">
-      <th style="color: white;" scope="col">Solicitud</th>
-      <th style="color: white;" scope="col">Nombres</th>
-      <th style="color: white;" scope="col">Apellidos</th>
-      <th style="color: white;" scope="col">Estado</th>
+      <th style="color: white;" scope="col">ID Requerimiento</th>
+      <th style="color: white;" scope="col">Fecha Inicio</th>
+      <th style="color: white;" scope="col">Fecha Finalizacion</th>
+      <th style="color: white;" scope="col">ID Consejero</th> 
+      <th style="color: white;" scope="col">Tipo de Requerimiento</th>
+      <th style="color: white;" scope="col">Detalle</th>
+      <th style="color: white;" scope="col">Respuesta</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">1</th>
-      <td></td>
-      <td></td>
-      <td></td>
+      @foreach (Requerimiento req in @Model.Mostrar)
+      {
+        <th scope="row">@req.ID</th>
+        <td>@req.Fecha_Inicio</td>
+        @if(@req.Fecha_Fin!=null){
+          <td>@req.Fecha_Fin</td>
+        }else{
+          <td>----</td>
+        }
+
+        @if(@req.Consejero_ID!=null){
+          <td>@req.Consejero_ID</td>
+        }else{
+          <td>----</td>
+        } 
+
+        @for(int i=0; i<@listCategoria.Count; i++){
+            @if(listCategoria[i].ID==@req.Tipo_Req){
+              cat=listCategoria[i];
+              break;
+            }
+          }
+        <td>@cat.Nombre</td>
+
+        <td>
+          <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Detalle">Ver Detalle</button>
+        </td>
+
+        @if(@req.Respuesta!=null){
+          <td>
+            <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Respuesta">Ver Respuesta</button>
+          </td>
+        }else{
+          <td>
+            <button class="btn btn-danger" style="pointer-events: none;" type="button" disabled>Ver Respuesta</button>
+          </td>
+        } 
+      }
     </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
+    
   </tbody>
 </table>
 </div>

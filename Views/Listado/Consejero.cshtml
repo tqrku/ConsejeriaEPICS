@@ -2,6 +2,8 @@
 
  @{
    Requerimiento requerimiento= new Requerimiento();
+   Categoria cat = new Categoria();
+   var listCategoria=@Model.Categorias;
  }
 
   <section id="hero2" class="d-flex justify-content-center align-items-center">
@@ -25,6 +27,7 @@
           <th style="color: white;" scope="col">ID Requerimiento</th>
           <th style="color: white;" scope="col">ID Estudiante</th>
           <th style="color: white;" scope="col">Fecha Inicio</th>
+          <th style="color: white;" scope="col">Tipo de Requerimiento</th>
           <th style="color: white;" scope="col">Detalle</th>
           <th style="color: white;" scope="col">Respuesta</th>
         </tr>
@@ -36,11 +39,18 @@
             <th scope="row">@req.ID</th>
             <td>@req.User_ID</td>
             <td>@req.Fecha_Inicio</td>
+            @for(int i=0; i<@listCategoria.Count; i++){
+              @if(listCategoria[i].ID==@req.Tipo_Req){
+                cat=listCategoria[i];
+                break;
+              }
+            }
+            <td>@cat.Nombre</td>
             <td>
               <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Detalle">Ver Detalle</button>
             </td>
             <td>
-              <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="<form asp-action='Responder' asp-controller='Listado'><label>Ingrese respuesta</label><input type='text' asp-for='@requerimiento.Respuesta' /><button type='submit' class='btn btn-primary'>Enviar</button></form>">Responder</button>
+              <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="<form asp-action='Responder' asp-controller='Listado'><label>Ingrese respuesta</label><input type='hidden' asp-for='@requerimiento.ID' value='@req.ID' /><input type='text' asp-for='@requerimiento.Respuesta' /><button type='submit' class='btn btn-primary'>Enviar</button></form>">Responder</button>
             </td>
           </tr>
         }
@@ -61,6 +71,7 @@
           }
           <th style="color: white;" scope="col">ID Consejero</th>
         } 
+        <th style="color: white;" scope="col">Tipo de Requerimiento</th>
         <th style="color: white;" scope="col">Detalle</th>
         @if(@Model.Titulo=="Requerimientos Terminados"){
           <th style="color: white;" scope="col">Respuesta</th>
@@ -80,16 +91,24 @@
           @if(@Model.Titulo!="Requerimientos Pendientes"){
             <td>@req.Consejero_ID</td>
           }
+
+          @for(int i=0; i<@listCategoria.Count; i++){
+            @if(listCategoria[i].ID==@req.Tipo_Req){
+              cat=listCategoria[i];
+              break;
+            }
+          }
+          <td>@cat.Nombre</td>
           <td>
             <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Detalle">Ver Detalle</button>
           </td>
 
           @if(@Model.Titulo =="Requerimientos Terminados"){
             <td>
-              <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Respuesta">Ver Respuesta</button>
+              <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Respuesta">Ver Respuesta</button>
             </td>
           }else if(@Model.Titulo=="Requerimientos Pendientes"){
-            <form asp-action="Seleccionar" asp-controller="Listado"><input type="hidden" asp-for="@requerimiento.ID"><button type="submit" class="btn btn-success">Seleccionar</button></form>
+            <form asp-action="Seleccionar" asp-controller="Listado"><input type="hidden" asp-for="@requerimiento.ID" value="@req.ID"><button type="submit" class="btn btn-warning">Seleccionar</button></form>
           }
         </tr>
       }
