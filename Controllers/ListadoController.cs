@@ -29,6 +29,7 @@ namespace ConsejeriaEPICS.Controllers
             listRequerimientos=_context.Requerimientos.ToList();
         }
 
+
         public IActionResult Consejero()
         {
             var status=HttpContext.Session.GetString("State"); 
@@ -78,6 +79,8 @@ namespace ConsejeriaEPICS.Controllers
             }    
         }
 
+        
+
         public IActionResult Pendiente()
         {
             foreach(Requerimiento req in listRequerimientos){
@@ -89,6 +92,8 @@ namespace ConsejeriaEPICS.Controllers
             modelo.Titulo="Requerimientos Pendientes";
             modelo.Desc="Visualiza todos los requerimientos que aun no han sido atendidos";
             modelo.Mostrar=listMostrar;
+            modelo.ReqUser=null;
+            modelo.Requerimiento= new Requerimiento();
             return View("Consejero",modelo);
         }
 
@@ -110,6 +115,7 @@ namespace ConsejeriaEPICS.Controllers
             modelo.Desc="Visualiza todos los requerimientos que estan siendo atendidos";
             modelo.ReqUser=listReqUser;
             modelo.Mostrar=listMostrar;
+            modelo.Requerimiento= new Requerimiento();
             return View("Consejero",modelo);
         }
 
@@ -124,7 +130,19 @@ namespace ConsejeriaEPICS.Controllers
             modelo.Titulo="Requerimientos Terminados";
             modelo.Desc="Visualiza todos los requerimientos que ya han sido atendidos";
             modelo.Mostrar=listMostrar;
+            modelo.ReqUser=null;
             return View("Consejero",modelo);
+        }
+
+        public IActionResult Seleccionar(Requerimiento req){
+
+            var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
+            Requerimiento requerimiento= _context.Requerimientos.Where(r => r.ID == req.ID).FirstOrDefault();
+            _context.Remove(requerimiento);
+            requerimiento.Consejero_ID= user.ID;  
+            _context.Add(requerimiento);         
+            _context.SaveChanges();
+            return RedirectToAction("Procesado");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

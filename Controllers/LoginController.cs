@@ -50,9 +50,28 @@ namespace ConsejeriaEPICS.Controllers
             
         }
 
+
         public IActionResult Logout(){
             HttpContext.Session.Clear();
             return RedirectToAction("Index");
+        }
+
+
+        public IActionResult Registro(){
+            return View();
+        }
+
+        public IActionResult Registrar(Usuario usuario){
+
+            usuario.Tipo="E";
+            if(ModelState.IsValid){
+                _context.Add(usuario);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
+            }else{
+                return View();
+            }
+
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

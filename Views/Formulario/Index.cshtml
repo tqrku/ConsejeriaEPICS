@@ -1,6 +1,8 @@
- 
+@model dynamic
+
 @{
     ViewData["Title"] = "Formulario de Solicitud";
+    Requerimiento requerimiento= @Model.Requerimiento;
 }
  
  <section id="hero" class="d-flex justify-content-center align-items-center">
@@ -21,29 +23,28 @@
                  <h1 class="font-weight-bold mb-3" style="color: black;">Completa el formulario de Solicitud</h1>
                  <br>
                 
-                 <form action="" method="post">
+                 <form asp-action="Envio" asp-controller="Formulario" method="POST">
                      <div class="form-group mb-3">
-                        <label  class="font-weight-bold" style="color: black;">Titulo del Problema<span class="text-danger">*</span></label>
+                        <label  class="font-weight-bold" style="color: black;">Tipo de Requerimiento:<span class="text-danger">*</span></label>
                         <br>
-                        <input type="text" class="form-control" id="cambio" style="background-color: #910222;color:white">
+                        <select asp-for="@requerimiento.Tipo_Req">
+                          @foreach (Categoria categoria in @Model.Categorias)
+                          {
+                              <option value="@categoria.ID">@categoria.Nombre</option>
+                          }
+                        </select>
                          <span class="text-danger"></span>
                      </div>
                      <br>
                      <div class="form-group mb-3">
                          <label  class="font-weight-bold" style="color: black;">Descripción del Problema:<span class="text-danger">*</span></label>
-                         <textarea type="text"  style="background-color: #910222;color:white" class="form-control"></textarea>
+                         <textarea type="text"  style="background-color: #910222;color:white" class="form-control" asp-for="@requerimiento.Detalle"></textarea>
                           <span  class="text-danger"></span>
                      </div>
-                     <br>
-                     <div class="form-group mb-3">
-                        <label  class="font-weight-bold" style="color: black;">Estado:<span class="text-danger">*</span></label>
-                        <br>
-                        <input type="text" class="form-control" value="Pendiente" style="background-color: #910222;color:white">
-                         <span class="text-danger"></span>
-                     </div>
+
                    <br>
                    <div style="text-align: center;">
-                               <button class="get-started-btn scrollto" style="border-radius: 50px;margin:20px">Regístrar</button>
+                      <button class="get-started-btn scrollto" style="border-radius: 50px;margin:20px" type="submit">Regístrar</button>
                    </div>
              
                  </form>

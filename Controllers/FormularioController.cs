@@ -9,6 +9,7 @@ using ConsejeriaEPICS.Models;
 using ConsejeriaEPICS.Data;
 using Newtonsoft.Json;
 using Microsoft.AspNetCore.Http;
+using System.Dynamic;
 
 namespace ConsejeriaEPICS.Controllers
 {
@@ -30,7 +31,10 @@ namespace ConsejeriaEPICS.Controllers
                 var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
                 var tipo = user.Tipo;
                 if(tipo=="E"){
-                    return View();
+                    dynamic modelo = new ExpandoObject();
+                    modelo.Categorias = _context.Categorias.ToList();
+                    modelo.Requerimiento = new Requerimiento();
+                    return View(modelo);
                 }else{
                     HttpContext.Session.Clear();
                     return RedirectToAction("Index","Login");
@@ -42,6 +46,10 @@ namespace ConsejeriaEPICS.Controllers
         }
 
         public IActionResult Envio(Requerimiento req){
+            var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
+            req.User_ID = user.ID;
+            req.Estado = "PENDIENTE";
+            req.Fecha_Inicio = DateTime.Today;
             if(ModelState.IsValid){
                 _context.Requerimientos.Add(req);
                 _context.SaveChanges();

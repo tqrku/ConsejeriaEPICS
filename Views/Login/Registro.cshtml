@@ -1,4 +1,4 @@
-
+@model ConsejeriaEPICS.Models.Usuario
 
 @{
     ViewData["Title"] = "Formulario de Registro";
@@ -16,59 +16,47 @@
                  <h1 class="font-weight-bold mb-3" style="color: black;">Completa el formulario de Registro</h1>
                  <br>
                 
-                 <form action="" method="post">
+                 <form asp-action="Registrar" asp-controller="Login" method="post">
               
                      <div class="form-group mb-3">
                          <label  class="font-weight-bold" style="color: black;">Email:<span class="text-danger">*</span></label>
-                         <input type="text"  style="background-color: #910222;color:white" class="form-control">
+                         <input type="text"  style="background-color: #910222;color:white" class="form-control" asp-for="Correo" required />
                           <span  class="text-danger"></span>
                      </div>
                      <br>
                      <div class="form-group mb-3">
                         <label  class="font-weight-bold" style="color: black;">Contraseña:<span class="text-danger">*</span></label>
                         <br>
-                        <input type="password" class="form-control"  style="background-color: #910222;color:white">
+                        <input type="password" class="form-control"  style="background-color: #910222;color:white" asp-for="Correo" required />
                          <span class="text-danger"></span>
                      </div>
                      <br>
                      <div class="form-group mb-3">
                          <label  class="font-weight-bold" style="color: black;">Nombres:<span class="text-danger">*</span></label>
-                         <input type="text"  style="background-color: #910222;color:white" class="form-control"></input>
+                         <input type="text"  style="background-color: #910222;color:white" class="form-control" asp-for="Correo" required />
                           <span class="text-danger"></span>
                      </div>
                      <br>
                       <div class="form-group mb-3">
                         <label class="font-weight-bold" style="color: black;">Apellidos:<span class="text-danger">*</span></label>
-                        <input type="text"  style="background-color: #910222;color:white" class="form-control">
+                        <input type="text"  style="background-color: #910222;color:white" class="form-control" asp-for="Apellido" required />
                          <span  class="text-danger"></span>
                       </div>
                      <br>
                      <div class="form-group mb-3">
-                        <label class="font-weight-bold" style="color: black;">Código de Matricula:<span class="text-danger">*</span></label>
-                        <input type="text"  style="background-color: #910222;color:white"  class="form-control">
+                        <label class="font-weight-bold" style="color: black;">Código de Alumno:<span class="text-danger">*</span></label>
+                        <input type="text"  style="background-color: #910222;color:white"  class="form-control" asp-for="ID" required />
                          <span  class="text-danger"></span>
                      </div>
                      <br>
                      <div class="form-group mb-3">
                         <label class="font-weight-bold" style="color: black;">DNI<span class="text-danger">*</span></label>
-                        <input type="text" style="background-color: #910222;color:white"  class="form-control">
-                         <span  class="text-danger"></span>
-                     </div>
-                     <br>
-                     <div class="form-group mb-3">
-                        <label class="font-weight-bold" style="color: black;" >Celular<span class="text-danger">*</span></label>
-                        <input type="text" style="background-color: #910222;color:white"  class="form-control">
-                         <span  class="text-danger"></span>
-                     </div>
-                     <br>
-                     <div class="form-group mb-3">
-                        <label class="font-weight-bold" style="color: black;" >Escuela<span class="text-danger">*</span></label>
-                        <input type="text"  style="background-color: #910222;color:white"  class="form-control">
+                        <input type="text" style="background-color: #910222;color:white"  class="form-control" asp-for="DNI" required />
                          <span  class="text-danger"></span>
                      </div>
                      <br>
                    <div style="text-align: center;">
-                               <button class="get-started-btn scrollto" style="border-radius: 50px;margin:20px">Regístrar</button>
+                               <button type="submit" class="get-started-btn scrollto" style="border-radius: 50px;margin:20px">Regístrar</button>
                    </div>
              
                  </form>
