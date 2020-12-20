@@ -139,6 +139,7 @@ namespace ConsejeriaEPICS.Controllers
             return View("Consejero",modelo);
         }
 
+
         public IActionResult Seleccionar(Requerimiento req){
 
             var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
@@ -161,6 +162,17 @@ namespace ConsejeriaEPICS.Controllers
             _context.Add(requerimiento);         
             _context.SaveChanges();
             return RedirectToAction("Terminado");
+        }
+
+        public IActionResult Editar(Requerimiento req){
+            Requerimiento requerimiento= _context.Requerimientos.Where(r => r.ID == req.ID).FirstOrDefault();
+            _context.Remove(requerimiento);
+            _context.SaveChanges();
+            requerimiento.Tipo_Req= req.Tipo_Req;
+            requerimiento.Detalle= req.Detalle; 
+            _context.Add(requerimiento);         
+            _context.SaveChanges();
+            return RedirectToAction("Estudiante");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

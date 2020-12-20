@@ -3,6 +3,7 @@
  @{
    Categoria cat = new Categoria();
    var listCategoria=@Model.Categorias;
+   string id="", rpta="", edit="";
  }
  
  <section id="hero" class="d-flex justify-content-center align-items-center">
@@ -26,50 +27,141 @@
       <th style="color: white;" scope="col">Estado</th>
       <th style="color: white;" scope="col">Detalle</th>
       <th style="color: white;" scope="col">Respuesta</th>
+      <th style="color: white;" scope="col">Editar</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
       @foreach (Requerimiento req in @Model.Mostrar)
       {
-        <th scope="row">@req.ID</th>
-        <td>@req.Fecha_Inicio</td>
-        @if(@req.Fecha_Fin!=null){
-          <td>@req.Fecha_Fin</td>
-        }else{
-          <td>----</td>
-        }
-
-        @if(@req.Consejero_ID!=null){
-          <td>@req.Consejero_ID</td>
-        }else{
-          <td>----</td>
-        } 
-
-        @for(int i=0; i<@listCategoria.Count; i++){
-            @if(listCategoria[i].ID==@req.Tipo_Req){
-              cat=listCategoria[i];
-              break;
-            }
+        id = "Modal"+@req.ID;
+        <tr>
+          <th scope="row">@req.ID</th>
+          <td>@req.Fecha_Inicio</td>
+          @if(@req.Fecha_Fin!=null){
+            <td>@req.Fecha_Fin</td>
+          }else{
+            <td>----</td>
           }
-        <td>@cat.Nombre</td>
-        <td>@req.Estado</td>
-        <td>
-          <button type="button" class="btn btn-success" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Detalle">Ver Detalle</button>
-        </td>
 
-        @if(@req.Respuesta!=null){
+          @if(@req.Consejero_ID!=null){
+            <td>@req.Consejero_ID</td>
+          }else{
+            <td>----</td>
+          } 
+
+          @for(int i=0; i<@listCategoria.Count; i++){
+              @if(listCategoria[i].ID==@req.Tipo_Req){
+                cat=listCategoria[i];
+                break;
+              }
+            }
+          <td>@cat.Nombre</td>
+          <td>@req.Estado</td>
+
           <td>
-            <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="@req.Respuesta">Ver Respuesta</button>
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#@id">Ver Detalle</button>
           </td>
-        }else{
-          <td>
-            <button class="btn btn-danger" style="pointer-events: none;" type="button" disabled>Ver Respuesta</button>
-          </td>
-        } 
-      }
-    </tr>
-    
+
+          <div class="modal fade" id="@id" tabindex="-1" role="dialog" aria-hidden="true" style="color: black;">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Detalle del requerimiento:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    @req.Detalle
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          @if(@req.Respuesta!=null){
+
+            rpta = "Rpta"+@req.ID;
+
+            <td>
+                <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#@rpta">Ver Respuesta</button>
+            </td>
+
+            <div class="modal fade" id="@rpta" tabindex="-1" role="dialog" aria-hidden="true" style="color: black;">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Respuesta del consejero:</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      @req.Respuesta
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          }else{
+            <td>
+              <button class="btn btn-danger" style="pointer-events: none;" type="button" disabled>Ver Respuesta</button>
+            </td>
+          } 
+
+          @if(@req.Estado=="PENDIENTE"){
+
+            edit= "Edit"+@req.ID;
+
+            <td>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#@edit">Editar</button>
+            </td>
+
+            <div class="modal fade" id="@edit" tabindex="-1" role="dialog" aria-hidden="true" style="color: black;">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Editar Requerimiento:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form asp-action="Editar" asp-controller="Listado">
+                      <div class="form-group">
+                        <input type="hidden" value="@req.ID" asp-for="@req.ID"/>
+                        <label>Tipo:</label>
+                        <select asp-for="@req.Tipo_Req">
+                          @foreach (Categoria cate in listCategoria)
+                          {
+                            if(@cate.ID==@req.Tipo_Req){
+                              <option value="@cate.ID" selected>@cate.Nombre</option>
+                            }else{
+                              <option value="@cate.ID">@cate.Nombre</option>
+                            }
+                          }
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label>Descripcion del Problema:</label>
+                        <input asp-for="@req.Detalle" value="@req.Detalle"/>
+                      </div>
+                      <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          }else{
+            <td>
+              <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Editar</button>
+            </td>
+          }
+
+        </tr>
+      } 
   </tbody>
 </table>
 </div>
