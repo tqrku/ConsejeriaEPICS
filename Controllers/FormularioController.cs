@@ -51,7 +51,6 @@ namespace ConsejeriaEPICS.Controllers
             var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
             req.User_ID = user.ID;
             req.Estado = "PENDIENTE";
-            Console.WriteLine(req.Detalle);
             req.Fecha_Inicio = DateTime.Now;
             if(ModelState.IsValid){
                 _context.Requerimientos.Add(req);

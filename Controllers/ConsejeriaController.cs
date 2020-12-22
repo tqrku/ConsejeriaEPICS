@@ -34,7 +34,7 @@ namespace ConsejeriaEPICS.Controllers
             if(status!=null){
                 var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
                 var tipo = user.Tipo;
-                if(tipo=="D"){
+                if(tipo=="C"){
                     return View();
                 }else{
                     HttpContext.Session.Clear();
