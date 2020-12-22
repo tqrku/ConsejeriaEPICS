@@ -158,6 +158,7 @@ namespace ConsejeriaEPICS.Controllers
             _context.Remove(requerimiento);
             _context.SaveChanges();
             requerimiento.Respuesta= req.Respuesta;
+            requerimiento.Fecha_Fin = DateTime.Now;
             requerimiento.Estado="TERMINADO";  
             _context.Add(requerimiento);         
             _context.SaveChanges();

@@ -52,7 +52,7 @@ namespace ConsejeriaEPICS.Controllers
             req.User_ID = user.ID;
             req.Estado = "PENDIENTE";
             Console.WriteLine(req.Detalle);
-            req.Fecha_Inicio = DateTime.Today;
+            req.Fecha_Inicio = DateTime.Now;
             if(ModelState.IsValid){
                 _context.Requerimientos.Add(req);
                 _context.SaveChanges();
