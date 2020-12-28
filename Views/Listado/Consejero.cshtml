@@ -105,18 +105,6 @@
   <h2 style="color: black;">Otros Requerimientos</h2>
   }
   
-<form>
-        <div class="form-group mb-5">
-        <label class="font-weight-bold" style="color: black;" >Filtrar por Categoria</label>
-        <select class="form-control" style="height: 70px; background-color: #910222; color:white;">
-            <option value="">Todos</option>
-            <option value="">Deficiencia Académica</option>
-            <option value="">Acceso Office o Portal</option>
-            <option value="">#.....</option>
-        </select>
-        <button class="get-started-btn" style="border-radius: 50px;margin:20px" > Filtrar </button>
-        </div>
-</form>
   <table class="table" >
     <thead>
       <tr style="background-color: #910222;">
@@ -133,7 +121,6 @@
         <th style="color: white;" scope="col">Detalle</th>
         @if(@Model.Titulo=="Requerimientos Terminados"){
           <th style="color: white;" scope="col">Respuesta</th>
-          <th style="color: white;" scope="col">Categoria</th>
         }else if(@Model.Titulo=="Requerimientos Pendientes"){
           <th style="color: white;" scope="col">Seleccionar</th>
         }
