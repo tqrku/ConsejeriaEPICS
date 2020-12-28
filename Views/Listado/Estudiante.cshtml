@@ -72,7 +72,7 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    @req.Detalle
+                    <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" readonly>@req.Detalle</textarea>
                   </div>
                 </div>
               </div>
@@ -96,7 +96,7 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                      @req.Respuesta
+                      <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" readonly>@req.Respuesta</textarea>
                     </div>
                   </div>
                 </div>
@@ -130,7 +130,7 @@
                       <div class="form-group">
                         <input type="hidden" value="@req.ID" asp-for="@req.ID"/>
                         <label>Tipo:</label>
-                        <select asp-for="@req.Tipo_Req">
+                        <select asp-for="@req.Tipo_Req"  class="form-control" style="height: 70px; background-color: #910222; color:white;">
                           @foreach (Categoria cate in listCategoria)
                           {
                             if(@cate.ID==@req.Tipo_Req){
@@ -143,7 +143,7 @@
                       </div>
                       <div class="form-group">
                         <label>Descripcion del Problema:</label>
-                        <input asp-for="@req.Detalle" value="@req.Detalle"/>
+                        <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" value="@req.Detalle" asp-for="@req.Detalle"></textarea>
                       </div>
                       <div class="form-group">
                         <button type="submit" class="btn btn-primary">Enviar</button>

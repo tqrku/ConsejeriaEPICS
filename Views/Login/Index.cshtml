@@ -1,16 +1,55 @@
 @model ConsejeriaEPICS.Models.Usuario
 
-<div id="login" style="padding-bottom: 0%;">
-    <img src="~/img/fia.jpg" style="width: 100%;" style="padding-bottom: 0%;">
-<div class="loginbox" style="padding-bottom: none;">
-        <h1>Login</h1>
-        <form asp-action="Logueo" asp-controller="Login">
-            <p>Usuario</p>
-            <input type="text" asp-for="Correo" placeholder="Escribe tu correo institucional">
-            <p>Contraseña</p>
-            <input type="password" asp-for="Password" placeholder="Escribe tu contraseña">
-            <input type="submit" value="Login">
-        </form>
-        <a asp-action="Registro" asp-controller="Login">Registrar Usuario</a>
+@{
+    Layout="";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ConsejeriaEPICS</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/lib/icofont/icofont.min.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/lib/animate.css/animate.min.css" >
+    <link href="~/lib/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/lib/venobox/venobox.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div >
+        <main role="main" class="pb-3">
+            <div id="login" style="padding-bottom: 0%;">
+                <img src="~/img/fia.jpg" style="width: 100%;" style="padding-bottom: 0%;">
+            <div class="loginbox" style="padding-bottom: none;">
+                    <h1>Login</h1>
+                    <form asp-action="Logueo" asp-controller="Login">
+                        <p>Usuario</p>
+                        <input type="text" asp-for="Correo" placeholder="Escribe tu correo institucional">
+                        <p>Contraseña</p>
+                        <input type="password" asp-for="Password" placeholder="Escribe tu contraseña">
+                        <input type="submit" value="Iniciar Sesión">
+                    </form>
+                    <a asp-action="Registro" asp-controller="Login">Registrar Usuario</a>
+                </div>
+            </div>
+        </main>
     </div>
-</div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery.easing/jquery.easing.min.js"></script>
+    <script src="~/lib/owl.carousel/owl.carousel.min.js"></script>
+    <script src="~/lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/lib/venobox/venobox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous"></script>
+    <script src="~/js/site.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

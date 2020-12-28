@@ -64,7 +64,7 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    @req.Detalle
+                    <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" readonly>@req.Detalle</textarea>
                   </div>
                 </div>
               </div>
@@ -87,7 +87,7 @@
                     <form asp-action="Responder" asp-controller="Listado">
                       <div class="form-group">
                         <input type="hidden" value="@req.ID" asp-for="@req.ID"/>
-                        <input type="textarea" asp-for="@req.Respuesta"/>
+                        <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" asp-for="@req.Respuesta"></textarea>
                       </div>
                       <div class="form-group">
                         <button type="submit" class="btn btn-primary">Enviar</button>
@@ -163,7 +163,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                  @req.Detalle
+                  <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" readonly>@req.Detalle</textarea>
                 </div>
               </div>
             </div>
@@ -184,7 +184,7 @@
                     </button>
                   </div>
                   <div class="modal-body">
-                    @req.Respuesta
+                    <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" readonly>@req.Respuesta</textarea>
                   </div>
                 </div>
               </div>

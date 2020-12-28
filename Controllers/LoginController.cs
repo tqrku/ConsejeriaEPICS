@@ -56,6 +56,20 @@ namespace ConsejeriaEPICS.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult Redir(){
+            var status=HttpContext.Session.GetString("State");
+            if(status!=null){
+                var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
+                var tipo = user.Tipo;
+                if(tipo=="C"){
+                    return RedirectToAction("Index","Consejeria");
+                }else{
+                    return RedirectToAction("Index","Estudiante");
+                }
+            }else{
+                return RedirectToAction("Index");
+            }
+        }
 
         public IActionResult Registro(){
             return View();
