@@ -191,3 +191,4 @@ C:\Users\Usuario\Desktop\Proy_Soft\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\stati
 C:\Users\Usuario\Desktop\Proy_Soft\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.dll
 C:\Users\Usuario\Desktop\Proy_Soft\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.pdb
 C:\Users\Usuario\Desktop\Proy_Soft\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\ConsejeriaEPICS.genruntimeconfig.cache
+D:\VSCode_Workspace\ConsejeriaEPICS\obj\Debug\netcoreapp3.1\Razor\Views\Listado\Reportes.cshtml.g.cs

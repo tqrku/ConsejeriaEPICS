@@ -64,7 +64,6 @@ namespace ConsejeriaEPICS.Controllers
             return RedirectToAction("Consejero","Listado");
         }
 
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

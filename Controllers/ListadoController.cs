@@ -83,7 +83,28 @@ namespace ConsejeriaEPICS.Controllers
             }    
         }
 
-        
+        public IActionResult Reportes(){
+            var user = JsonConvert.DeserializeObject<Usuario>(HttpContext.Session.GetString("SessionUser"));
+            var tipo = user.Tipo;
+                if(tipo=="C"){
+                    dynamic modelo = new ExpandoObject();
+                    var listMostrar= new List<Requerimiento>();
+                    modelo.Categorias=listCategoria;
+                    modelo.Selected=1;
+                    for(int i=0; i<listRequerimientos.Count; i++){
+                        if(listRequerimientos[i].Tipo_Req==modelo.Selected){
+                            listMostrar.Add(listRequerimientos[i]);
+                        }
+                    }
+                    modelo.Mostrar=listMostrar;
+                    return View("Reportes",modelo);
+                }else{
+                    HttpContext.Session.Clear();
+                    return RedirectToAction("Index","Login");
+                }
+
+        }
+
 
         public IActionResult Pendiente()
         {
@@ -174,6 +195,20 @@ namespace ConsejeriaEPICS.Controllers
             _context.Add(requerimiento);         
             _context.SaveChanges();
             return RedirectToAction("Estudiante");
+        }
+
+        public IActionResult Filtrar(Categoria cat){
+            var listMostrar= new List<Requerimiento>();
+            dynamic modelo = new ExpandoObject();
+            for(int i=0; i<listRequerimientos.Count; i++){
+                if(listRequerimientos[i].Tipo_Req==cat.ID){
+                    listMostrar.Add(listRequerimientos[i]);
+                }
+            }
+            modelo.Mostrar=listMostrar;
+            modelo.Categorias=listCategoria;
+            modelo.Selected=cat.ID;
+            return View("Reportes",modelo);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

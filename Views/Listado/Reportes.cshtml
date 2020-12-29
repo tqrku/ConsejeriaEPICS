@@ -9,8 +9,8 @@
   <section id="hero2" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
 
-      <h1>@Model.Titulo<br></h1>
-      <h1>@Model.Desc</h1>
+      <h1>Reportes<br></h1>
+      <h1>Visualice los requerimientos con filtros de selección</h1>
     </div>
   </section>
   <br>
@@ -19,102 +19,21 @@
 
 <div class="container">
 
-  @if(@Model.ReqUser!=null){
-    <h2 style="color: black;">Tus requerimientos</h2>
-    <table class="table" >
-      <thead>
-        <tr style="background-color: #910222;">
-          <th style="color: white;" scope="col">ID Requerimiento</th>
-          <th style="color: white;" scope="col">ID Estudiante</th>
-          <th style="color: white;" scope="col">Fecha Inicio</th>
-          <th style="color: white;" scope="col">Tipo de Requerimiento</th>
-          <th style="color: white;" scope="col">Detalle</th>
-          <th style="color: white;" scope="col">Respuesta</th>
-        </tr>
-      </thead>
-      <tbody>
-        @foreach (Requerimiento req in @Model.ReqUser)
-        {
-          id = "Modal"+@req.ID;
-          rpta = "Rpta"+@req.ID;
-
-          <tr>
-            <th scope="row">@req.ID</th>
-            <td>@req.User_ID</td>
-            <td>@req.Fecha_Inicio</td>
-            @for(int i=0; i<@listCategoria.Count; i++){
-              @if(listCategoria[i].ID==@req.Tipo_Req){
-                cat=listCategoria[i];
-                break;
-              }
-            }
-            <td>@cat.Nombre</td>
-
-            <td>
-              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#@id">Ver Detalle</button>
-            </td>
-
-            <div class="modal fade" id="@id" tabindex="-1" role="dialog" aria-hidden="true" style="color: black;">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Detalle del requerimiento:</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" readonly>@req.Detalle</textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <td>
-              <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#@rpta">Responder</button>
-            </td>
-
-            <div class="modal fade" id="@rpta" tabindex="-1" role="dialog" aria-hidden="true" style="color: black;">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title">Responder:</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form asp-action="Responder" asp-controller="Listado">
-                      <div class="form-group">
-                        <input type="hidden" value="@req.ID" asp-for="@req.ID"/>
-                        <textarea type="text"  style="background-color: #910222; color:white;" class="form-control" asp-for="@req.Respuesta"></textarea>
-                      </div>
-                      <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </tr>
-        }
-      </tbody>
-    </table>
-  <h2 style="color: black;">Otros Requerimientos</h2>
-  }
-  
-<form>
+<form asp-action="Filtrar" asp-controller="Listado">
         <div class="form-group mb-5">
         <label class="font-weight-bold" style="color: black;" >Filtrar por Categoria</label>
-        <select class="form-control" style="height: 70px; background-color: #910222; color:white;">
-            <option value="">Todos</option>
-            <option value="">Deficiencia Académica</option>
-            <option value="">Acceso Office o Portal</option>
-            <option value="">#.....</option>
+        <select class="form-control" style="height: 70px; background-color: #910222; color:white;" asp-for="@cat.ID">
+            @foreach (Categoria categoria in @listCategoria)
+            {
+              @if(@Model.Selected==categoria.ID){
+                <option value="@categoria.ID" selected>@categoria.Nombre</option>
+              }else{
+                <option value="@categoria.ID">@categoria.Nombre</option>
+              }
+                
+            }
         </select>
-        <button class="get-started-btn" style="border-radius: 50px;margin:20px" > Filtrar </button>
+        <button type="submit" class="get-started-btn" style="border-radius: 50px;margin:20px" > Filtrar </button>
         </div>
 </form>
   <table class="table" >
@@ -123,20 +42,10 @@
         <th style="color: white;" scope="col">ID Requerimiento</th>
         <th style="color: white;" scope="col">ID Estudiante</th>
         <th style="color: white;" scope="col">Fecha Inicio</th>
-        @if(@Model.Titulo!="Requerimientos Pendientes"){
-          @if(@Model.Titulo=="Requerimientos Terminados"){
-            <th style="color: white;" scope="col">Fecha Finalizacion</th>
-          }
-          <th style="color: white;" scope="col">ID Consejero</th>
-        } 
-        <th style="color: white;" scope="col">Tipo de Requerimiento</th>
+        <th style="color: white;" scope="col">Fecha Finalizacion</th>
+        <th style="color: white;" scope="col">ID Consejero</th>
         <th style="color: white;" scope="col">Detalle</th>
-        @if(@Model.Titulo=="Requerimientos Terminados"){
-          <th style="color: white;" scope="col">Respuesta</th>
-          <th style="color: white;" scope="col">Categoria</th>
-        }else if(@Model.Titulo=="Requerimientos Pendientes"){
-          <th style="color: white;" scope="col">Seleccionar</th>
-        }
+        <th style="color: white;" scope="col">Respuesta</th>
       </tr>
     </thead>
     <tbody>
@@ -148,20 +57,19 @@
           <th scope="row">@req.ID</th>
           <td>@req.User_ID</td>
           <td>@req.Fecha_Inicio</td>
-          @if(@Model.Titulo=="Requerimientos Terminados"){
+
+          @if(@req.Estado=="TERMINADO"){
             <td>@req.Fecha_Fin</td>
-          }
-          @if(@Model.Titulo!="Requerimientos Pendientes"){
-            <td>@req.Consejero_ID</td>
+          }else{
+            <td>----</td>
           }
 
-          @for(int i=0; i<@listCategoria.Count; i++){
-            @if(listCategoria[i].ID==@req.Tipo_Req){
-              cat=listCategoria[i];
-              break;
-            }
+          @if(@req.Estado!="PENDIENTE"){
+            <td>@req.Consejero_ID</td>
+          }else{
+            <td>----</td>
           }
-          <td>@cat.Nombre</td>
+
           <td>
             <button type="button" class="btn btn-success" data-toggle="modal" data-target="#@id">Ver Detalle</button>
           </td>
@@ -182,7 +90,7 @@
             </div>
           </div>
 
-          @if(@Model.Titulo =="Requerimientos Terminados"){
+          @if(@req.Estado =="TERMINADO"){
             <td>
               <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#@rpta">Ver Respuesta</button>
             </td>
@@ -203,9 +111,9 @@
               </div>
             </div>
 
-          }else if(@Model.Titulo=="Requerimientos Pendientes"){
+          }else{
             <td>
-              <form asp-action="Seleccionar" asp-controller="Listado"><input type="hidden" asp-for="@req.ID" value="@req.ID"><button type="submit" class="btn btn-warning">Seleccionar</button></form>
+              <button type="button" class="btn btn-danger" disabled>Ver Respuesta</button>
             </td>
           }
         </tr>

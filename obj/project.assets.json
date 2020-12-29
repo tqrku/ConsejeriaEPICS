@@ -949,19 +949,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
+    "C:\\Users\\jebg_\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Proy_Soft\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj",
+      "projectUniqueName": "D:\\VSCode_Workspace\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj",
       "projectName": "ConsejeriaEPICS",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\Proy_Soft\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\Proy_Soft\\ConsejeriaEPICS\\obj\\",
+      "projectPath": "D:\\VSCode_Workspace\\ConsejeriaEPICS\\ConsejeriaEPICS.csproj",
+      "packagesPath": "C:\\Users\\jebg_\\.nuget\\packages\\",
+      "outputPath": "D:\\VSCode_Workspace\\ConsejeriaEPICS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jebg_\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
