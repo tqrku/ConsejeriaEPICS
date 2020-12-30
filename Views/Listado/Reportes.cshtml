@@ -36,7 +36,8 @@
         <button type="submit" class="get-started-btn" style="border-radius: 50px;margin:20px" > Filtrar </button>
         </div>
 </form>
-  <table class="table" >
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Ingrese el ID del consejero" title="Type in a name">
+  <table class="table searchable sortable" id='myTable'>
     <thead>
       <tr style="background-color: #910222;">
         <th style="color: white;" scope="col">ID Requerimiento</th>
@@ -51,6 +52,7 @@
     <tbody>
       @foreach (Requerimiento req in @Model.Mostrar)
       {
+        
         id = "Modal"+@req.ID;
         rpta = "Rpta"+@req.ID;
         <tr>
@@ -120,4 +122,24 @@
       }
     </tbody>
   </table>
+ <script>
+function myFunction() {
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
   </div>
